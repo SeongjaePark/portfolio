@@ -31,6 +31,11 @@
   --weight-regular: 400;
 }
 
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
 /* Typography */
 
 h1 {
@@ -59,9 +64,4 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
-}
-
-/* Universal tags */
-* {
-  box-sizing: border-box;
 }
