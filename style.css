@@ -33,6 +33,9 @@
 
   /* SIze */
   --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -116,6 +119,7 @@ p {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  padding-bottom: 30px;
 }
 
 .navbar__item {
@@ -126,11 +130,14 @@ p {
 }
 
 .navbar__item.active {
-  border: 1px solid var(--color-white);
+  border: 2px solid var(--color-cyon);
+  border-radius: 10%;
 }
 
 .navbar__item:hover {
   background-color: var(--color-cyon);
+  color: var(--color-dark-grey);
+  font-weight: var(--weight-semi-bold);
 }
 
 /* Home */
@@ -160,4 +167,82 @@ p {
   border: 3px solid var(--color-white);
   border-radius: 20px;
   color: var(--color-white);
+}
+
+.home__contact:hover {
+  color: var(--color-cyon);
+  border-color: var(--color-cyon);
+  transform: scale(1.2);
+  transition: all var(--animation-duration) ease;
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  font-size: 70px;
+  line-height: 170px;
+  width: 170px;
+  height: 170px;
+  color: var(--color-cyon);
+  border: 2px solid var(--color-dark-grey);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover i {
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.school {
+  display: flex;
+  align-items: center;
+}
+
+.school__logo {
+  width: 35px;
+  height: 30px;
+}
+
+.school__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.school__name, .school__period {
+  color: var(--color-dark-grey);
+}
+
+.school__name {
+  font-size: var(--font-small);
+}
+
+.school__period {
+  font-size: var(--font-micro;
 }
