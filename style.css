@@ -135,16 +135,16 @@ p {
 
 /* Home */
 #home {
-  background: center/cover no-repeat url(imgs/home-background.png);
+  background: var(--color-dark-grey);
   padding: 40px;
   text-align: center;
 }
 
 .home__avatar {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 3px solid var(--color-white);
+  width: 500px;
+  height: 500px;
+  border-radius: 5%;
+  border: 7px solid var(--color-cyon);
 }
 
 .home__title,
