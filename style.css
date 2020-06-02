@@ -129,6 +129,9 @@ p {
   width: 40px;
   height: 40px;
 }
+#navbar.navbar--dark .navbar__toggle-btn {
+  top: 25px;
+}
 
 .navbar__menu {
   display: flex;
@@ -166,6 +169,7 @@ p {
   top: 40px;
   font-size: 24px;
   color: var(--color-white);
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__toggle-btn:hover {
@@ -207,6 +211,25 @@ p {
 .home__contact:hover {
   color: var(--color-cyon);
   border-color: var(--color-cyon);
+  transform: scale(1.2);
+  transition: all var(--animation-duration) ease;
+}
+
+.home__top-btn {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 20px;
+  font-size: 40px;
+  color: var(--color-cyon);
+}
+
+.home__top-btn--on {
+  display: block;
+  z-index: 1;
+}
+
+.home__top-btn--on:hover {
   transform: scale(1.2);
   transition: all var(--animation-duration) ease;
 }

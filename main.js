@@ -36,6 +36,16 @@ document.addEventListener("scroll", () => {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// Go-to-top button pops up when Home is gone
+const homeBtn = document.querySelector(".home__top-btn");
+document.addEventListener("scroll", () => {
+  if (window.scrollY >= homeHeight) {
+    homeBtn.classList.add("home__top-btn--on");
+  } else {
+    homeBtn.classList.remove("home__top-btn--on");
+  }
+});
+
 // Define funciton for easy scrolling
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
