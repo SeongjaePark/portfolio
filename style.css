@@ -110,15 +110,15 @@ p {
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 16px 10px;
   transition: all var(--animation-duration) ease-in-out;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-dark-grey);
-  padding: 8px;
-  height: 70px;
+  padding: 0px 8px;
   z-index: 1;
+  height: 60px;
 }
 
 #navbar.navbar--dark .navbar__logo {
@@ -128,9 +128,6 @@ p {
 #navbar.navbar--dark .navbar__icon {
   width: 40px;
   height: 40px;
-}
-#navbar.navbar--dark .navbar__toggle-btn {
-  top: 25px;
 }
 
 .navbar__menu {
@@ -162,7 +159,7 @@ p {
   position: absolute;
   display: none;
   right: 32px;
-  top: 40px;
+  top: 20px;
   font-size: 24px;
   color: var(--color-white);
   transition: all var(--animation-duration) ease-in-out;
@@ -432,7 +429,8 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-cyon);
+  font-weight: var(--weight-semi-bold);
 }
 
 .project__description h3:after {
@@ -440,9 +438,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -562,6 +560,18 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-dark-grey);
+    height: 60px;
+    padding: 0px 8px;
+  }
+
+  .navbar__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  #navbar.navbar--dark {
+    padding: 0px 8px;
   }
 
   .navbar__menu {
@@ -569,6 +579,17 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+    background-color: var(--color-dark-grey);
+    margin-top: 0px;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
+  .navbar__item {
+    border-color: transparent;
+    border-radius: 0%;
   }
 
   .about__majors {
