@@ -149,9 +149,6 @@ p {
   margin: 0 4px;
   color: var(--color-white);
   border-radius: var(--size-border-radius);
-}
-
-.navbar__item.active {
   border: 2px solid var(--color-cyon);
   border-radius: 10%;
 }
@@ -159,7 +156,6 @@ p {
 .navbar__item:hover {
   background-color: var(--color-cyon);
   color: var(--color-dark-grey);
-  font-weight: var(--weight-semi-bold);
 }
 
 .navbar__toggle-btn {
@@ -184,6 +180,10 @@ p {
   padding: 40px;
   padding-top: 100px;
   text-align: center;
+}
+
+.home__container {
+  padding-top: 25px;
 }
 
 .home__avatar {
@@ -359,12 +359,12 @@ p {
   padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-cyon);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
