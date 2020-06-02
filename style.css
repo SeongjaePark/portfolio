@@ -118,6 +118,7 @@ p {
   background-color: var(--color-dark-grey);
   padding: 8px;
   height: 70px;
+  z-index: 1;
 }
 
 #navbar.navbar--dark .navbar__logo {
