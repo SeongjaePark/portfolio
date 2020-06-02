@@ -103,12 +103,30 @@ p {
 /* Navbar */
 
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-dark-grey);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-dark-grey);
+  padding: 8px;
+  height: 70px;
+}
+
+#navbar.navbar--dark .navbar__logo {
+  padding-bottom: 15px;
+}
+
+#navbar.navbar--dark .navbar__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .navbar__menu {
@@ -159,6 +177,7 @@ p {
 #home {
   background: var(--color-dark-grey);
   padding: 40px;
+  padding-top: 100px;
   text-align: center;
 }
 
