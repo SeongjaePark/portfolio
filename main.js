@@ -19,6 +19,17 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
+  scrollIntoView(link);
 });
+
+// Handdle scrolling when tapping on the "Contact me" button on home
+const contactBtn = document.querySelector(".home__contact");
+contactBtn.addEventListener("click", (event) => {
+  scrollIntoView("#contact");
+});
+
+// Define funciton for easy scrolling
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
