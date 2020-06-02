@@ -215,25 +215,6 @@ p {
   transition: all var(--animation-duration) ease;
 }
 
-.home__top-btn {
-  position: fixed;
-  display: none;
-  right: 30px;
-  bottom: 20px;
-  font-size: 40px;
-  color: var(--color-cyon);
-}
-
-.home__top-btn--on {
-  display: block;
-  z-index: 1;
-}
-
-.home__top-btn--on:hover {
-  transform: scale(1.2);
-  transition: all var(--animation-duration) ease;
-}
-
 /* Section common */
 .section {
   padding: 50px;
@@ -529,6 +510,30 @@ p {
   transform: scale(1.15);
   color: var(--color-cyon);
   transition: all var(--animation-duration) ease-in;
+}
+
+/* Scroll Up Button */
+.top-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  font-size: 40px;
+  color: var(--color-cyon);
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.top-btn--appear {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.top-btn--appear:hover {
+  transform: scale(1.2);
+  transition: all var(--animation-duration) ease;
 }
 
 /* For below 498px screen width  */

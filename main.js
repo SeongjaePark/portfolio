@@ -37,13 +37,18 @@ document.addEventListener("scroll", () => {
 });
 
 // Go-to-top button pops up when Home is gone
-const homeBtn = document.querySelector(".home__top-btn");
+const homeBtn = document.querySelector(".top-btn");
 document.addEventListener("scroll", () => {
   if (window.scrollY >= homeHeight) {
-    homeBtn.classList.add("home__top-btn--on");
+    homeBtn.classList.add("top-btn--appear");
   } else {
-    homeBtn.classList.remove("home__top-btn--on");
+    homeBtn.classList.remove("top-btn--appear");
   }
+});
+
+// Click top button -> go to home
+homeBtn.addEventListener("click", () => {
+  scrollIntoView("#home");
 });
 
 // Define funciton for easy scrolling
