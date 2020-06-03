@@ -112,12 +112,13 @@ p {
   color: var(--color-white);
   padding: 16px 10px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-dark-grey);
   padding: 0px 8px;
-  z-index: 1;
+
   height: 60px;
 }
 
@@ -566,6 +567,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 60px;
   }
   .home__avatar {
     width: 300px;
@@ -585,6 +587,7 @@ p {
     background-color: var(--color-dark-grey);
     height: 60px;
     padding: 0px 8px;
+    z-index: 1;
   }
 
   .navbar__icon {
@@ -596,6 +599,14 @@ p {
     padding: 0px 8px;
   }
 
+  .navbar__logo {
+    padding: 0;
+  }
+
+  #navbar.navbar--dark .navbar__logo {
+    padding: 0;
+  }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -603,6 +614,7 @@ p {
     display: none;
     background-color: var(--color-dark-grey);
     margin-top: 0px;
+    padding-top: 5px;
   }
 
   .navbar__menu.open {
