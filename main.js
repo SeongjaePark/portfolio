@@ -35,12 +35,23 @@ contactBtn.addEventListener("click", (event) => {
   scrollIntoView("#contact");
 });
 
-// Home fades to transparent as the window scroll down
+// Home & contact me btn fades to transparent as the window scroll down
 const home = document.querySelector("#home");
 const homeHeight = home.getBoundingClientRect().height;
 const homeContainer = document.querySelector(".home__container");
 document.addEventListener("scroll", () => {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+  contactBtn.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+// when mouse on Contact me btn -> recover opacity
+contactBtn.addEventListener("mouseenter", (e) => {
+  contactBtn.style.opacity = 1;
+});
+
+// when mouse off Contact me btn -> lose opacity again
+contactBtn.addEventListener("mouseleave", (e) => {
+  contactBtn.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
 // Go-to-top button pops up when Home is gone
