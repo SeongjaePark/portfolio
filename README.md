@@ -1,4 +1,4 @@
-# [SJ Park's Portfolio]
+# SJ Park's Portfolio
 
 ## [Link to the Page](https://seongjaepark.github.io/portfolio/)
 
