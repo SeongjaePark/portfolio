@@ -45,7 +45,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   cursor: default;
 }
 
@@ -333,6 +333,8 @@ p {
 
 .skillset__right {
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .tools {
@@ -341,6 +343,7 @@ p {
 
 .tools,
 .etc {
+  flex-basis: 50%;
   padding: 20px;
 }
 
@@ -437,7 +440,7 @@ p {
 }
 
 .project__description h3:after {
-  content: "";
+  content: '';
   display: block;
   position: relative;
   left: 50%;
